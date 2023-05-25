@@ -3,7 +3,7 @@
 Automatically quit the Newcomers guild upon login to *Turtle WoW*.
 
 ## Why This?
-Because, honestly, I don't see much point in the Newcomers guild.  It was supposed to be for newcomers and low-level players, but it ended up becoming the "de facto" or "lazy boy" guild that everyone and their brother is a part of purely for no reason other than disinterest on everyone's part.
+Because, honestly, I don't see much point in the Newcomers guild.  From my understanding, it was supposed to be for newcomers and low-level players, but even *before* the hard mute on players below Level 5, it ended up becoming the "de facto" or "lazy boy" guild that everyone and their brother is a part of purely for no reason other than disinterest on everyone's part.  That's how I see it, anyway.
 
 ## How It Works
 * The AddOn checks to see if the player is in a guild as soon as the first system message ("Welcome to Turtle WoW!") is seen in chat.
