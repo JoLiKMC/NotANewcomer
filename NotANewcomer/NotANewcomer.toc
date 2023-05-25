@@ -1,6 +1,7 @@
 ## Interface: 11200
 ## Title: Not a Newcomer! [|cff8DC63FTWoW|cffFFCC00]
 ## Author: Jo Li KMC
-## Notes: Automatically quit the Newcomers guild upon login.
-## Version: 1.0.2
+## Notes: Automatically quit the "Newcomers" guild upon login. (More or less.)
+## Version: 1.0.5
+
 NotANewcomer.lua
