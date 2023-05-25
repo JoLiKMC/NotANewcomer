@@ -31,3 +31,13 @@ The AddOn still works exactly as it did before, but instead of doing its thing o
   * Moved the line "`local guildName=GetGuildInfo("player")`" under the "`if (IsInGuild()) then`" command<br>
 After much trial-and-error, I finally got the bloody thing to do its job in a way I find acceptable.<br>
 For some reason I can't explain, the AddOn was completely blind to the guild on a fresh character.  I tried using `UI_INFO_MESSAGE` instead of the other things and it didn't work.  Then, after more tinkering, I moved the `GetGuildInfo` line down and… yep.  That's all it took.  So now, the AddOn works (more or less) as it's supposed to!
+
+## Special Thanks
+- LexieBean (https://github.com/Lexiebean)<br>
+I totally recycled some of her code to make this happen.
+
+- Vanilla WoW Wiki (https://vanilla-wow-archive.fandom.com)
+<br>You have to dig a little, but they have some very good information about API and Event stuff.  Not to mention a smidgen of LUA help.
+
+- Wowpedia (https://wowpedia.fandom.com/wiki/Wowpedia)
+<br>Much the same as Vanilla WoW Wiki, but with more details.  You kinda have to dig through this pile of info, too, to find the relevant Vanilla stuff.
