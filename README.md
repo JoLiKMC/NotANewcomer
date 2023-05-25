@@ -14,8 +14,7 @@ It's mostly for people who have a very bad case of alt-itis and are very forgetf
   * If the player is in any other guild or *not* in a guild, it does nothing.
 
 ## Bugs
-* Due to how late the Newcomers guild auto-join fires, this AddOn **will not** remove a player from the guild on first login.
-<br>I'm looking into how to fix that without resorting to cheesy "quick fixes".
+* None that I'm aware of (as of v1.0.5).  Let me know what you find, if anything!
 
 ## Version History
 ### v1.0.0
