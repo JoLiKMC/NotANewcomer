@@ -5,8 +5,10 @@ Automatically quit the Newcomers guild upon login to *Turtle WoW*.
 ## Why This?
 Because, honestly, I don't see much point in the Newcomers guild.  From my understanding, it was supposed to be for newcomers and low-level players, but even *before* the hard mute on players below Level 5, it ended up becoming the "de facto" or "lazy boy" guild that everyone and their brother is a part of purely for no reason other than disinterest on everyone's part.  That's how I see it, anyway.
 
+It's mostly for people who have a very bad case of alt-itis and are very forgetful.  IE, me.
+
 ## How It Works
-* The AddOn checks to see if the player is in a guild as soon as the first system message ("Welcome to Turtle WoW!") is seen in chat.
+* As soon as the player triggers the "Area Discovered" message, the AddOn checks to see if the player is in a guild.
 * If the player is in a guild, it checks to see *which* guild.
   * If the player is in the "**Newcomers**" guild, it immediately removes them from it.
   * If the player is in any other guild or *not* in a guild, it does nothing.
@@ -20,6 +22,13 @@ Because, honestly, I don't see much point in the Newcomers guild.  From my under
 * Initial version.
 
 ### v1.0.2
-* Changed how the AddOn functions
-  * Instead of doing its thing on first load, it waits for the first system message to pop up.<br>
-The AddOn still works exactly as it did before, but it just uses a different trigger.  Which unfortunately means that it *still* won't auto-quit the guild on a fresh character…
+* Changed how the AddOn triggers
+  * Swapped out "`VARIABLES_LOADED`" trigger with "`CHAT_SYSTEM_MESSAGE`<br>
+The AddOn still works exactly as it did before, but instead of doing its thing on first load, it waits for the first system message ("Welcome to Turtle WoW!") to pop up.  Which unfortunately means that it *still* won't auto-quit the guild on a fresh character…
+
+### v1.0.5
+* Changed how the AddOn triggers again
+  * Swapped out "`CHAT_SYSTEM_MESSAGE`" trigger with "`UI_INFO_MESSAGE`
+  * Moved the line "`local guildName=GetGuildInfo("player")`" under the "`if (IsInGuild()) then`" command<br>
+After much trial-and-error, I finally got the bloody thing to do its job in a way I find acceptable.<br>
+For some reason I can't explain, the AddOn was completely blind to the guild on a fresh character.  I tried using `UI_INFO_MESSAGE` instead of the other things and it didn't work.  Then, after more tinkering, I moved the `GetGuildInfo` line down and… yep.  That's all it took.  So now, the AddOn works (more or less) as it's supposed to!
