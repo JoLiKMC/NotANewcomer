@@ -1,5 +1,6 @@
 # Not a Newcomer! (for *Turtle WoW*)
-![NotANewcomer](https://github.com/JoLiKMC/NotANewcomer/assets/102710555/2c3ccbbb-825f-4e40-818e-3dd05eb58dff)<br>
+![NotANewcomer](https://github.com/JoLiKMC/NotANewcomer/assets/102710555/842d9bff-3af4-4176-ae5d-3dadd91fe5ec)
+<br>
 Automatically quit the Newcomers guild upon login to *Turtle WoW*.
 
 ## Why This?
